@@ -470,47 +470,97 @@
     </section>
 
     <!-- Apply -->
-    <section id="apply" class="py-16 md:py-28 bg-mist">
-        <div class="max-w-xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-8 md:mb-10 reveal">
-                <h2 class="text-2xl md:text-4xl font-bold text-ink mb-3">Start Your Global Career</h2>
-                <p class="text-ink/55 italic text-sm md:text-base">TIG & MIG welding training with AWS membership and Eurocert ISO 9606-1 certification since 2008.</p>
-            </div>
+    <section id="apply" class="py-16 md:py-28 bg-mist relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-terracotta/5 via-transparent to-sage/10 pointer-events-none"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
 
-            <form class="reveal bg-white border border-gray-200/80 p-6 md:p-8 space-y-5 shadow-[0_20px_50px_-30px_rgba(11,31,51,0.2)]" onsubmit="handleFormSubmit(event)">
-                <div class="space-y-1.5">
-                    <label class="text-xs font-semibold uppercase tracking-wider text-ink/50">Full Name</label>
-                    <input type="text" placeholder="Your Name" required class="form-input w-full p-3 text-sm">
+                <!-- Left: info panel -->
+                <div class="reveal">
+                    <span class="text-xs uppercase tracking-[0.2em] text-terracotta font-semibold">04 · Enroll</span>
+                    <h2 class="text-2xl md:text-4xl font-bold text-ink mt-2 mb-4">Start Your Global Career</h2>
+                    <p class="text-ink/60 text-sm md:text-base leading-relaxed mb-8">
+                        TIG & MIG welding training with AWS membership and Eurocert ISO 9606-1 certification since 2008.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-8">
+                        <div class="bg-terracotta-light border border-terracotta/30 p-4">
+                            <div class="text-2xl font-extrabold text-terracotta">AWS</div>
+                            <div class="text-[11px] text-ink/60 mt-1 uppercase tracking-wide">Miami Partner</div>
+                        </div>
+                        <div class="bg-sage-soft border border-sage/40 p-4">
+                            <div class="text-2xl font-extrabold text-sage-deep">ISO</div>
+                            <div class="text-[11px] text-ink/60 mt-1 uppercase tracking-wide">9606-1 Certified</div>
+                        </div>
+                        <div class="bg-[#EEF2FF] border border-indigo-200 p-4">
+                            <div class="text-2xl font-extrabold text-indigo-600">TIG</div>
+                            <div class="text-[11px] text-ink/60 mt-1 uppercase tracking-wide">GTAW Training</div>
+                        </div>
+                        <div class="bg-[#FEF3C7] border border-amber-200 p-4">
+                            <div class="text-2xl font-extrabold text-amber-700">MIG</div>
+                            <div class="text-[11px] text-ink/60 mt-1 uppercase tracking-wide">GMAW Training</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-center gap-3 bg-white border border-gray-200/80 px-4 py-3">
+                            <span class="text-terracotta text-lg">📞</span>
+                            <a href="tel:+91-9316744482" class="text-ink hover:text-terracotta font-medium">+91-9316744482</a>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white border border-gray-200/80 px-4 py-3">
+                            <span class="text-sage-deep text-lg">✉</span>
+                            <a href="mailto:trg@eurotechworld.net" class="text-ink hover:text-terracotta font-medium break-all">trg@eurotechworld.net</a>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white border border-gray-200/80 px-4 py-3">
+                            <span class="text-indigo-600 text-lg">📍</span>
+                            <span class="text-ink/70">Plot No: 146, JLPL Industrial Area, Sector 82, Mohali, Punjab 160062</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="space-y-1.5">
-                    <label class="text-xs font-semibold uppercase tracking-wider text-ink/50">Email Address</label>
-                    <input type="email" placeholder="email@example.com" required class="form-input w-full p-3 text-sm">
-                </div>
-                <div class="space-y-1.5">
-                    <label class="text-xs font-semibold uppercase tracking-wider text-ink/50">Phone Number</label>
-                    <input type="tel" placeholder="+91" required class="form-input w-full p-3 text-sm">
-                </div>
-                <div class="space-y-1.5">
-                    <label class="text-xs font-semibold uppercase tracking-wider text-ink/50">Location</label>
-                    <input type="text" placeholder="Your City/State" required class="form-input w-full p-3 text-sm">
-                </div>
-                <div class="space-y-1.5">
-                    <label class="text-xs font-semibold uppercase tracking-wider text-ink/50">Service Interested</label>
-                    <select class="form-input w-full p-3 text-sm bg-white">
-                        <option>AWS Welder Qualification</option>
-                        <option>TIG Welding Training (GTAW)</option>
-                        <option>MIG Welding Training (GMAW)</option>
-                        <option>Composite Welding (TIG + MIG + SMAW)</option>
-                        <option>Corporate Welding Training</option>
-                        <option>CE Marking / Testing Services</option>
-                    </select>
-                </div>
-                <div class="space-y-1.5">
-                    <label class="text-xs font-semibold uppercase tracking-wider text-ink/50">Message</label>
-                    <textarea placeholder="Your Message" rows="3" class="form-input w-full p-3 text-sm resize-none"></textarea>
-                </div>
-                <button type="submit" class="btn-solid w-full py-3.5 font-semibold text-sm tracking-wide">Submit Interest</button>
-            </form>
+
+                <!-- Right: form -->
+                <form class="reveal bg-white border border-gray-200/80 p-6 md:p-8 shadow-[0_20px_50px_-30px_rgba(11,31,51,0.2)] grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5" onsubmit="handleFormSubmit(event)">
+                    <div class="md:col-span-2">
+                        <h3 class="text-lg font-bold text-ink mb-1">Submit Your Interest</h3>
+                        <p class="text-xs text-ink/50">We'll get back to you within 1 business day.</p>
+                    </div>
+                    <div class="space-y-1.5">
+                        <label class="text-xs font-semibold uppercase tracking-wider text-ink/50">Full Name</label>
+                        <input type="text" placeholder="Your Name" required class="form-input w-full p-3 text-sm">
+                    </div>
+                    <div class="space-y-1.5">
+                        <label class="text-xs font-semibold uppercase tracking-wider text-ink/50">Email Address</label>
+                        <input type="email" placeholder="email@example.com" required class="form-input w-full p-3 text-sm">
+                    </div>
+                    <div class="space-y-1.5">
+                        <label class="text-xs font-semibold uppercase tracking-wider text-ink/50">Phone Number</label>
+                        <input type="tel" placeholder="+91" required class="form-input w-full p-3 text-sm">
+                    </div>
+                    <div class="space-y-1.5">
+                        <label class="text-xs font-semibold uppercase tracking-wider text-ink/50">Location</label>
+                        <input type="text" placeholder="Your City/State" required class="form-input w-full p-3 text-sm">
+                    </div>
+                    <div class="space-y-1.5 md:col-span-2">
+                        <label class="text-xs font-semibold uppercase tracking-wider text-ink/50">Service Interested</label>
+                        <select class="form-input w-full p-3 text-sm bg-white">
+                            <option>AWS Welder Qualification</option>
+                            <option>TIG Welding Training (GTAW)</option>
+                            <option>MIG Welding Training (GMAW)</option>
+                            <option>Composite Welding (TIG + MIG + SMAW)</option>
+                            <option>Corporate Welding Training</option>
+                            <option>CE Marking / Testing Services</option>
+                        </select>
+                    </div>
+                    <div class="space-y-1.5 md:col-span-2">
+                        <label class="text-xs font-semibold uppercase tracking-wider text-ink/50">Message</label>
+                        <textarea placeholder="Your Message" rows="3" class="form-input w-full p-3 text-sm resize-none"></textarea>
+                    </div>
+                    <div class="md:col-span-2">
+                        <button type="submit" class="btn-solid w-full py-3.5 font-semibold text-sm tracking-wide">Submit Interest</button>
+                    </div>
+                </form>
+
+            </div>
         </div>
     </section>
 
